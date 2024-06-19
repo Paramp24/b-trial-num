@@ -28,8 +28,8 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = []
-#ALLOWED_HOSTS = ['.vercel.app']
+#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '*']
 
 
 # Application definition
@@ -81,8 +81,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': BASE_DIR / 'db.sqlite3',
-        'NAME': os.path.join('/tmp', 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
+        #'NAME': os.path.join('/tmp', 'db.sqlite3'),
     }
 }
 
