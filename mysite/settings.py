@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -85,6 +86,20 @@ DATABASES = {
         #'NAME': os.path.join('/tmp', 'db.sqlite3'),
     }
 }
+
+
+'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'LhaBoLrWjDEZuDtfLAtciKnmqRWQqGxx',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '34266',
+    }
+}
+'''
 
 
 # Password validation
